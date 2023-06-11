@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Font+Name">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="\style\style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desarrollo y diseño</title>
+  <div class="navbar bg-body-tertiary">
+    <div class="container-fluid">
+      <div style="display: flex; align-items: center; justify-content: center; gap: 5px;">
+        <button type="button" style="display: grid; justify-content: center; align-items: center; background: white; border: none;"  onclick="window.location.href='/html/home.html'" tabindex="-1"><i class="material-icons">home</i></button>
+        <a class="navbar-brand">Laptops para laborar en desarrollo y diseño</a>
+      </div>
+      <div style="display: flex; gap: 1rem;">
+        <button type="button" id="min-req" class="btns-requireds">Requisitos minimos</button>
+        <button type="button" id="max-req" class="btns-requireds">Requisitos recomendados</button>
+      </div>
+    </div>
+  </div>
+</head>
+<body>
+  
+  <div id="min-req-basic" class="prices-container" style="display: grid; width: 100%;">
+    <div style="display: flex; padding: 20px 20px 20px 20px; justify-content: center; gap: 2rem;">
+      <div style="display: flex; gap: 1rem; align-items: center;">
+        <label for="filter-min">Precio mínimo:</label>
+        <input type="text" id="filter-min" class="inputs-all"  placeholder="Ejemplo: 5" required>
+      </div>
+      <div style="display: flex; gap: 1rem; align-items: center;">
+        <label for="filter-max">Precio máximo:</label>
+        <input type="text" id="filter-max" class="inputs-all" placeholder="Ejemplo: 10" required>
+        <button type="button" id="filter-button" class="btns-requireds"><i class="material-icons">search</i></button>
+      </div>
+  
+      <div style="display: flex; gap: 1rem; align-items: center;">
+        <button type="button" id="show-all-button" class="btns-requireds">Mostrar todos</button>
+      </div>
+    </div>
+    
+    
+    <div class="class-for-cards">
+      <div class="price-item ">
+        <div style="height: 200px; background: #ccc; justify-content: center;align-items: center;display: grid; padding: 5px 5px 5px 5px;">
+          <img src="\img\imgs_menu\laptop.jpg" alt="No disponible">
+        </div>
+        <br>
+        <div class="elements-date">
+          <div class="item-name">Nombre de laptop</div>
+          <div class="item-carac">Caractersticas</div>
+          <div class="ite-programs">Programas clave</div>
+          <div class="price">Precio: Q10.00</div>
+        </div>
+      </div>
+      <div class="price-item">
+        <div style="height: 200px; background: #ccc; justify-content: center;align-items: center;display: grid; padding: 5px 5px 5px 5px;">
+          <img src="\img\imgs_menu\laptop.jpg" alt="No disponible">
+        </div>
+        <br>
+        <div class="elements-date">
+          <div class="item-name">Nombre de laptop</div>
+          <div class="item-carac">Caractersticas</div>
+          <div class="ite-programs">Programas clave</div>
+          <div class="price">Precio: Q20.00</div>
+        </div>
+      </div>
+      <div class="price-item">
+        <div style="height: 200px; background: #ccc; justify-content: center;align-items: center;display: grid; padding: 5px 5px 5px 5px;">
+          <img src="\img\imgs_menu\laptop.jpg" alt="No disponible">
+        </div>
+        <br>
+        <div class="elements-date">
+          <div class="item-name">Nombre de laptop</div>
+          <div class="item-carac">Caractersticas</div>
+          <div class="ite-programs">Programas clave</div>
+          <div class="price">Precio: Q30.00</div>
+        </div>
+      </div>
+      <div class="price-item">
+        <div style="height: 200px; background: #ccc; justify-content: center;align-items: center;display: grid; padding: 5px 5px 5px 5px;">
+          <img src="\img\imgs_menu\laptop.jpg" alt="No disponible">
+        </div>
+        <br>
+        <div class="elements-date">
+          <div class="item-name">Nombre de laptop</div>
+          <div class="item-carac">Caractersticas</div>
+          <div class="ite-programs">Programas clave</div>
+          <div class="price">Precio: Q40.00</div>
+        </div>
+      </div>
+    </div>
+    <div class="class-for-cards">
+      <div class="price-item">
+        <div style="height: 200px; background: #ccc; justify-content: center;align-items: center;display: grid; padding: 5px 5px 5px 5px;">
+          <img src="\img\imgs_menu\laptop.jpg" alt="No disponible">
+        </div>
+        <br>
+        <div class="elements-date">
+          <div class="item-name">Nombre de laptop</div>
+          <div class="item-carac">Caractersticas</div>
+          <div class="ite-programs">Programas clave</div>
+          <div class="price">Precio: Q50.00</div>
+        </div>
+      </div>
+      <div class="price-item">
+        <div style="height: 200px; background: #ccc; justify-content: center;align-items: center;display: grid; padding: 5px 5px 5px 5px;">
+          <img src="\img\imgs_menu\laptop.jpg" alt="No disponible">
+        </div>
+        <br>
+        <div class="elements-date">
+          <div class="item-name">Nombre de laptop</div>
+          <div class="item-carac">Caractersticas</div>
+          <div class="ite-programs">Programas clave</div>
+          <div class="price">Precio: Q60.00</div>
+        </div>
+      </div>
+      <div class="price-item">
+        <div style="height: 200px; background: #ccc; justify-content: center;align-items: center;display: grid; padding: 5px 5px 5px 5px;">
+          <img src="\img\imgs_menu\laptop.jpg" alt="No disponible">
+        </div>
+        <br>
+        <div class="elements-date">
+          <div class="item-name">Nombre de laptop</div>
+          <div class="item-carac">Caractersticas</div>
+          <div class="ite-programs">Programas clave</div>
+          <div class="price">Precio: Q70.00</div>
+        </div>
+      </div>
+      <div class="price-item">
+        <div style="height: 200px; background: #ccc; justify-content: center;align-items: center;display: grid; padding: 5px 5px 5px 5px;">
+          <img src="\img\imgs_menu\laptop.jpg" alt="No disponible">
+        </div>
+        <br>
+        <div class="elements-date">
+          <div class="item-name">Nombre de laptop</div>
+          <div class="item-carac">Caractersticas</div>
+          <div class="ite-programs">Programas clave</div>
+          <div class="price">Precio: Q80.00</div>
+        </div>
+      </div>
+    </div>
+    <div class="class-for-cards">
+      <div class="price-item">
+        <div style="height: 200px; background: #ccc; justify-content: center;align-items: center;display: grid; padding: 5px 5px 5px 5px;">
+          <img src="\img\imgs_menu\laptop.jpg" alt="No disponible">
+        </div>
+        <br>
+        <div class="elements-date">
+          <div class="item-name">Nombre de laptop</div>
+          <div class="item-carac">Caractersticas</div>
+          <div class="ite-programs">Programas clave</div>
+          <div class="price">Precio: Q90.00</div>
+        </div>
+      </div>
+      <div class="price-item">
+        <div style="height: 200px; background: #ccc; justify-content: center;align-items: center;display: grid; padding: 5px 5px 5px 5px;">
+          <img src="\img\imgs_menu\laptop.jpg" alt="No disponible">
+        </div>
+        <br>
+        <div class="elements-date">
+          <div class="item-name">Nombre de laptop</div>
+          <div class="item-carac">Caractersticas</div>
+          <div class="ite-programs">Programas clave</div>
+          <div class="price">Precio: Q100.00</div>
+        </div>
+      </div>
+      <div class="price-item">
+        <div style="height: 200px; background: #ccc; justify-content: center;align-items: center;display: grid; padding: 5px 5px 5px 5px;">
+          <img src="\img\imgs_menu\laptop.jpg" alt="No disponible">
+        </div>
+        <br>
+        <div class="elements-date">
+          <div class="item-name">Nombre de laptop</div>
+          <div class="item-carac">Caractersticas</div>
+          <div class="ite-programs">Programas clave</div>
+          <div class="price">Precio: Q110.00</div>
+        </div>
+      </div>
+      <div class="price-item">
+        <div style="height: 200px; background: #ccc; justify-content: center;align-items: center;display: grid; padding: 5px 5px 5px 5px;">
+          <img src="\img\imgs_menu\laptop.jpg" alt="No disponible">
+        </div>
+        <br>
+        <div class="elements-date">
+          <div class="item-name">Nombre de laptop</div>
+          <div class="item-carac">Caractersticas</div>
+          <div class="ite-programs">Programas clave</div>
+          <div class="price">Precio: Q120.00</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="max-req-basic" class="prices-container" style="display: grid; width: 100%; display: none;">
+    <div style="display: flex; padding: 20px 20px 20px 20px; justify-content: center; gap: 2rem;">
+      <div style="display: flex; gap: 1rem; align-items: center;">
+        <label for="filter-min-max">Precio mínimo:</label>
+        <input type="text" id="filter-min-max" class="inputs-all"  placeholder="Ejemplo: 5" required>
+      </div>
+      <div style="display: flex; gap: 1rem; align-items: center;">
+        <label for="filter-max-max">Precio máximo:</label>
+        <input type="text" id="filter-max-max" class="inputs-all" placeholder="Ejemplo: 10" required>
+        <button type="button" id="filter-button" class="btns-requireds"><i class="material-icons">search</i></button>
+      </div>
+      <div style="display: flex; gap: 1rem; align-items: center;">
+        <button type="button" id="show-all-button" class="btns-requireds">Mostrar todos</button>
+      </div>
+    </div>
+    <div class="class-for-cards">
+      <div class="price-item-max">
+        <div style="height: 200px; background: red; justify-content: center;align-items: center;display: grid; padding: 5px 5px 5px 5px;">
+          <img src="\img\imgs_menu\laptop.jpg" alt="No disponible">
+        </div>
+        <br>
+        <div class="elements-date-max">
+          <div class="item-name">Nombre de laptop</div>
+          <div class="item-carac">Caractersticas</div>
+          <div class="ite-programs">Programas clave</div>
+          <div class="price-max">Precio: Q10.00</div>
+        </div>
+      </div>
+      <div class="price-item-max">
+        <div style="height: 200px; background: red; justify-content: center;align-items: center;display: grid; padding: 5px 5px 5px 5px;">
+          <img src="\img\imgs_menu\laptop.jpg" alt="No disponible">
+        </div>
+        <br>
+        <div class="elements-date-max">
+          <div class="item-name">Nombre de laptop</div>
+          <div class="item-carac">Caractersticas</div>
+          <div class="ite-programs">Programas clave</div>
+          <div class="price-max">Precio: Q20.00</div>
+        </div>
+      </div>
+      <div class="price-item-max">
+        <div style="height: 200px; background: red; justify-content: center;align-items: center;display: grid; padding: 5px 5px 5px 5px;">
+          <img src="\img\imgs_menu\laptop.jpg" alt="No disponible">
+        </div>
+        <br>
+        <div class="elements-date-max">
+          <div class="item-name">Nombre de laptop</div>
+          <div class="item-carac">Caractersticas</div>
+          <div class="ite-programs">Programas clave</div>
+          <div class="price-max">Precio: Q30.00</div>
+        </div>
+      </div>
+      <div class="price-item-max">
+        <div style="height: 200px; background: red; justify-content: center;align-items: center;display: grid; padding: 5px 5px 5px 5px;">
+          <img src="\img\imgs_menu\laptop.jpg" alt="No disponible">
+        </div>
+        <br>
+        <div class="elements-date-max">
+          <div class="item-name">Nombre de laptop</div>
+          <div class="item-carac">Caractersticas</div>
+          <div class="ite-programs">Programas clave</div>
+          <div class="price-max">Precio: Q40.00</div>
+        </div>
+      </div>
+    </div>
+    <div class="class-for-cards">
+      <div class="price-item-max">
+        <div style="height: 200px; background: red; justify-content: center;align-items: center;display: grid; padding: 5px 5px 5px 5px;">
+          <img src="\img\imgs_menu\laptop.jpg" alt="No disponible">
+        </div>
+        <br>
+        <div class="elements-date-max">
+          <div class="item-name">Nombre de laptop</div>
+          <div class="item-carac">Caractersticas</div>
+          <div class="ite-programs">Programas clave</div>
+          <div class="price-max">Precio: Q50.00</div>
+        </div>
+      </div>
+      <div class="price-item-max">
+        <div style="height: 200px; background: red; justify-content: center;align-items: center;display: grid; padding: 5px 5px 5px 5px;">
+          <img src="\img\imgs_menu\laptop.jpg" alt="No disponible">
+        </div>
+        <br>
+        <div class="elements-date-max">
+          <div class="item-name">Nombre de laptop</div>
+          <div class="item-carac">Caractersticas</div>
+          <div class="ite-programs">Programas clave</div>
+          <div class="price-max">Precio: Q60.00</div>
+        </div>
+      </div>
+      <div class="price-item-max">
+        <div style="height: 200px; background: red; justify-content: center;align-items: center;display: grid; padding: 5px 5px 5px 5px;">
+          <img src="\img\imgs_menu\laptop.jpg" alt="No disponible">
+        </div>
+        <br>
+        <div class="elements-date-max">
+          <div class="item-name">Nombre de laptop</div>
+          <div class="item-carac">Caractersticas</div>
+          <div class="ite-programs">Programas clave</div>
+          <div class="price-max">Precio: Q70.00</div>
+        </div>
+      </div>
+      <div class="price-item-max">
+        <div style="height: 200px; background: red; justify-content: center;align-items: center;display: grid; padding: 5px 5px 5px 5px;">
+          <img src="\img\imgs_menu\laptop.jpg" alt="No disponible">
+        </div>
+        <br>
+        <div class="elements-date-max">
+          <div class="item-name">Nombre de laptop</div>
+          <div class="item-carac">Caractersticas</div>
+          <div class="ite-programs">Programas clave</div>
+          <div class="price-max">Precio: Q80.00</div>
+        </div>
+      </div>
+    </div>
+    <div class="class-for-cards">
+      <div class="price-item-max">
+        <div style="height: 200px; background: red; justify-content: center;align-items: center;display: grid; padding: 5px 5px 5px 5px;">
+          <img src="\img\imgs_menu\laptop.jpg" alt="No disponible">
+        </div>
+        <br>
+        <div class="elements-date-max">
+          <div class="item-name">Nombre de laptop</div>
+          <div class="item-carac">Caractersticas</div>
+          <div class="ite-programs">Programas clave</div>
+          <div class="price-max">Precio: Q90.00</div>
+        </div>
+      </div>
+      <div class="price-item-max">
+        <div style="height: 200px; background: red; justify-content: center;align-items: center;display: grid; padding: 5px 5px 5px 5px;">
+          <img src="\img\imgs_menu\laptop.jpg" alt="No disponible">
+        </div>
+        <br>
+        <div class="elements-date-max">
+          <div class="item-name">Nombre de laptop</div>
+          <div class="item-carac">Caractersticas</div>
+          <div class="ite-programs">Programas clave</div>
+          <div class="price-max">Precio: Q100.00</div>
+        </div>
+      </div>
+      <div class="price-item-max">
+        <div style="height: 200px; background: red; justify-content: center;align-items: center;display: grid; padding: 5px 5px 5px 5px;">
+          <img src="\img\imgs_menu\laptop.jpg" alt="No disponible">
+        </div>
+        <br>
+        <div class="elements-date-max">
+          <div class="item-name">Nombre de laptop</div>
+          <div class="item-carac">Caractersticas</div>
+          <div class="ite-programs">Programas clave</div>
+          <div class="price-max">Precio: Q110.00</div>
+        </div>
+      </div>
+      <div class="price-item-max">
+        <div style="height: 200px; background: red; justify-content: center;align-items: center;display: grid; padding: 5px 5px 5px 5px;">
+          <img src="\img\imgs_menu\laptop.jpg" alt="No disponible">
+        </div>
+        <br>
+        <div class="elements-date-max">
+          <div class="item-name">Nombre de laptop</div>
+          <div class="item-carac">Caractersticas</div>
+          <div class="ite-programs">Programas clave</div>
+          <div class="price-max">Precio: Q120.00</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+<script>
+// Obtener referencias a los elementos del botón y los div
+const minReqButton = document.getElementById('min-req');
+const maxReqButton = document.getElementById('max-req');
+const minReqBasicDiv = document.getElementById('min-req-basic');
+const maxReqBasicDiv = document.getElementById('max-req-basic');
+
+// Agregar evento de clic al botón mínimo
+minReqButton.addEventListener('click', function() {
+  minReqBasicDiv.style.display = 'block';
+  maxReqBasicDiv.style.display = 'none';
+});
+
+// Agregar evento de clic al botón máximo
+maxReqButton.addEventListener('click', function() {
+  minReqBasicDiv.style.display = 'none';
+  maxReqBasicDiv.style.display = 'block';
+});
+
+</script>
+</body>
+</html>

@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Font+Name">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="\style\style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Educación básica</title>
+  <div class="navbar bg-body-tertiary">
+    <div class="container-fluid">
+      <div style="display: flex; align-items: center; justify-content: center; gap: 5px;">
+        <button type="button" style="display: grid; justify-content: center; align-items: center; background: white; border: none;"  onclick="window.location.href='/html/home.html'" tabindex="-1"><i class="material-icons">home</i></button>
+        <a class="navbar-brand">Laptops para educación básica</a>
+      </div>
+      <div style="display: flex; gap: 1rem;">
+        <button type="button" id="min-req" class="btns-requireds">Requisitos minimos</button>
+        <button type="button" id="max-req" class="btns-requireds">Requisitos recomendados</button>
+      </div>
+    </div>
+  </div>
+</head>
+<body>
+  
+  <div id="all_min">
+    <div style="display: flex; padding: 20px 20px 20px 20px; justify-content: center; gap: 2rem;">
+      <div style="display: flex; gap: 1rem; align-items: center;">
+        <label for="filter-min">Precio mínimo:</label>
+        <input type="text" id="filter-min" class="inputs-all"  placeholder="Ejemplo: 5" required>
+      </div>
+      <div style="display: flex; gap: 1rem; align-items: center;">
+        <label for="filter-max">Precio máximo:</label>
+        <input type="text" id="filter-max" class="inputs-all" placeholder="Ejemplo: 10" required>
+        <button type="button" id="filter-button" class="btns-requireds"><i class="material-icons">search</i></button>
+      </div>
+  
+      <div style="display: flex; gap: 1rem; align-items: center;">
+        <button type="button" id="show-all-button" class="btns-requireds">Mostrar todos</button>
+      </div>
+    </div>
+    <div id="min-req-basic" class="prices-container" style="display: grid; width: 100%;">
+      
+      <div class="class-for-cards">
+        <div class="price-item ">
+          <div style="height: 200px; background: white; justify-content: center;align-items: center;display: grid; padding: 5px 5px 5px 5px;">
+            <img src="\imp-pc\edu-basica\req-min\lenovo_idea_pad3.jpg" alt="No disponible" style="width: 255px;" onclick="openImagePopup(this.src)">
+          </div>
+          <br>
+          <div class="elements-date">
+            <div class="item-name">Lenovo IdeaPad 3</div>
+            <div class="item-carac">Caractersticas:</div>
+            <div style="display: grid; font-size: 10px;">
+              <a>- Intel Core i3</a>
+              <a>- 8GB RAM</a>
+              <a>- 256GB SSD</a>
+              <a>- Intel UHD Graphics</a>
+              <a>- Windows 10</a>
+            </div>
+            <div class="price">Precio: <a style="font-weight: 600;">Q4,500.00</a></div>
+          </div>
+        </div>
+        <div class="price-item">
+          <div style="height: 200px; background: white; justify-content: center;align-items: center;display: grid; padding: 5px 5px 5px 5px;">
+            <img src="\imp-pc\edu-basica\req-min\acer_aspire5.jpg" alt="No disponible" style="width: 255px;" onclick="openImagePopup(this.src)">
+  
+          </div>
+          <br>
+          <div class="elements-date">
+            <div class="item-name">Acer Aspire 5 </div>
+            <div class="item-carac">Caractersticas:</div>
+            <div style="display: grid; font-size: 10px;">
+              <a>- Intel Core i3</a>
+              <a>- 8GB RAM</a>
+              <a>- 256GB SSD</a>
+              <a>- Intel UHD Graphics</a>
+              <a>- Windows 10</a>
+            </div>
+            <div class="price">Precio: <a style="font-weight: 600;">Q4,800.00</a></div>
+          </div>
+        </div>
+        <div class="price-item">
+          <div style="height: 200px; background: white; justify-content: center;align-items: center;display: grid; padding: 5px 5px 5px 5px;">
+            <img src="\imp-pc\edu-basica\req-min\hp_15.jpg" alt="No disponible" style="width: 245px;" onclick="openImagePopup(this.src)">
+  
+          </div>
+          <br>
+          <div class="elements-date">
+            <div class="item-name">HP 15 </div>
+            <div class="item-carac">Caractersticas</div>
+            <div style="display: grid; font-size: 10px;">
+              <a>- Intel Core i3</a>
+              <a>- 8GB RAM</a>
+              <a>- 256GB SSD</a>
+              <a>- Intel UHD Graphics</a>
+              <a>- Windows 10</a>
+            </div>
+            <div class="price">Precio: <a style="font-weight: 600;">Q4,200.00</a></div>
+          </div>
+        </div>
+        <div class="price-item">
+          <div style="height: 200px; background: white; justify-content: center;align-items: center;display: grid; padding: 5px 5px 5px 5px;">
+            <img src="\imp-pc\edu-basica\req-min\dell_inspiron15.jpg" alt="No disponible" style="width: 255px;" onclick="openImagePopup(this.src)">
+  
+          </div>
+          <br>
+          <div class="elements-date">
+            <div class="item-name">Dell Inspiron 15</div>
+            <div class="item-carac">Caractersticas</div>
+            <div style="display: grid; font-size: 10px;">
+              <a>- Intel Core i3</a>
+              <a>- 8GB RAM</a>
+              <a>- 256GB SSD</a>
+              <a>- Intel UHD Graphics</a>
+              <a>- Windows 10</a>
+            </div>
+            <div class="price">Precio: <a style="font-weight: 600;">Q4,600.00</a></div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="class-for-cards">
+        <div class="price-item">
+          <div style="height: 200px; background: white; justify-content: center;align-items: center;display: grid; padding: 5px 5px 5px 5px;">
+            <img src="\imp-pc\edu-basica\req-min\asus_vivoBook15.jpg" alt="No disponible" style="width: 255px;" onclick="openImagePopup(this.src)">
+  
+          </div>
+          <br>
+          <div class="elements-date">
+            <div class="item-name">ASUS VivoBook 15</div>
+            <div style="display: grid; font-size: 10px;">
+              <a>- Intel Core i3</a>
+              <a>- 8GB RAM</a>
+              <a>- 256GB SSD</a>
+              <a>- Intel UHD Graphics</a>
+              <a>- Windows 10</a>
+            </div>
+            <div class="price">Precio: <a style="font-weight: 600;">Q4,700.00</a></div>
+          </div>
+        </div>
+        <div class="price-item">
+          <div style="height: 200px; background: white; justify-content: center;align-items: center;display: grid; padding: 5px 5px 5px 5px;">
+            <img src="\imp-pc\edu-basica\req-min\lenovo_deaPad_flex5.jpg" alt="No disponible" style="width: 225px;" onclick="openImagePopup(this.src)">
+  
+          </div>
+          <br>
+          <div class="elements-date">
+            <div class="item-name">Lenovo IdeaPad Flex 5 </div>
+            <div class="item-carac">Caractersticas</div>
+            <div style="display: grid; font-size: 10px;">
+              <a>- AMD Ryzen 3</a>
+              <a>- 8GB RAM</a>
+              <a>- 256GB SSD</a>
+              <a>- AMD Radeon Graphics</a>
+              <a>- Windows 10</a>
+            </div>
+            <div class="price">Precio: <a style="font-weight: 600;">Q5,000.00</a></div>
+          </div>
+        </div>
+        <div class="price-item">
+          <div style="height: 200px; background: white; justify-content: center;align-items: center;display: grid; padding: 5px 5px 5px 5px;">
+            <img src="\imp-pc\edu-basica\req-min\acer_swift_3.jpg" alt="No disponible" style="width: 255px;" onclick="openImagePopup(this.src)">
+  
+          </div>
+          <br>
+          <div class="elements-date">
+            <div class="item-name">Acer Swift 3 </div>
+            <div class="item-carac">Caractersticas</div>
+            <div style="display: grid; font-size: 10px;">
+              <a>- AMD Ryzen 5</a>
+              <a>- 8GB RAM</a>
+              <a>- 512GB SSD</a>
+              <a>- AMD Radeon Graphics</a>
+              <a>- Windows 10</a>
+            </div>
+            <div class="price">Precio: <a style="font-weight: 600;">Q6,000.00</a></div>
+          </div>
+        </div>
+        <div class="price-item">
+          <div style="height: 200px; background: white; justify-content: center;align-items: center;display: grid; padding: 5px 5px 5px 5px;">
+            <img src="\imp-pc\edu-basica\req-min\HP_Pavilion15.jpg" alt="No disponible" style="width: 255px;" onclick="openImagePopup(this.src)">
+  
+          </div>
+          <br>
+          <div class="elements-date">
+            <div class="item-name">HP Pavilion 15</div>
+            <div class="item-carac">Caractersticas</div>
+            <div style="display: grid; font-size: 10px;">
+              <a>- AMD Ryzen 5</a>
+              <a>- 8GB RAM</a>
+              <a>- 256GB SSD</a>
+              <a>- AMD Radeon Graphics</a>
+              <a>- Windows 10</a>
+            </div>
+            <div class="price">Precio: <a style="font-weight: 600;">Q5,500.00</a></div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="class-for-cards">
+        <div class="price-item">
+          <div style="height: 200px; background: white; justify-content: center;align-items: center;display: grid; padding: 5px 5px 5px 5px;">
+            <img src="\imp-pc\edu-basica\req-min\Dell_Inspiron_14.jpg" alt="No disponible" style="width: 255px;" onclick="openImagePopup(this.src)">
+  
+          </div>
+          <br>
+          <div class="elements-date">
+            <div class="item-name">Dell Inspiron 14</div>
+            <div class="item-carac">Caractersticas</div>
+            <div style="display: grid; font-size: 10px;">
+              <a>- Intel Core i5</a>
+              <a>- 8GB RAM</a>
+              <a>- 512GB SSD</a>
+              <a>- Intel UHD Graphics</a>
+              <a>- Windows 10</a>
+            </div>
+            <div class="price">Precio: <a style="font-weight: 600;">Q6,500.00</a></div>
+          </div>
+        </div>
+        <div class="price-item">
+          <div style="height: 200px; background: white; justify-content: center;align-items: center;display: grid; padding: 5px 5px 5px 5px;">
+            <img src="\imp-pc\edu-basica\req-min\ASUS_zenBook_14.jpg" alt="No disponible" style="width: 255px;" onclick="openImagePopup(this.src)">
+  
+          </div>
+          <br>
+          <div class="elements-date">
+            <div class="item-name">ASUS ZenBook 14</div>
+            <div class="item-carac">Caractersticas</div>
+            <div style="display: grid; font-size: 10px;">
+              <a>- Intel Core i5</a>
+              <a>- 8GB RAM</a>
+              <a>- 512GB SSD</a>
+              <a>- Intel UHD Graphics</a>
+              <a>- Windows 10</a>
+            </div>
+            <div class="price">Precio: <a style="font-weight: 600;">Q7,000.00</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="all_basic" style="display: none;">
+    <div style="display: flex; padding: 20px 20px 20px 20px; justify-content: center; gap: 2rem;">
+      <div style="display: flex; gap: 1rem; align-items: center;">
+        <label for="filter-min-max">Precio mínimo:</label>
+        <input type="text" id="filter-min-max" class="inputs-all"  placeholder="Ejemplo: 5" required>
+      </div>
+      <div style="display: flex; gap: 1rem; align-items: center;">
+        <label for="filter-max-max">Precio máximo:</label>
+        <input type="text" id="filter-max-max" class="inputs-all" placeholder="Ejemplo: 10" required>
+        <button type="button" id="filter-button-max" class="btns-requireds"><i class="material-icons">search</i></button>
+      </div>
+      <div style="display: flex; gap: 1rem; align-items: center;">
+        <button type="button" id="show-all-button-max" class="btns-requireds">Mostrar todos</button>
+      </div>
+    </div>
+    <div id="max-req-basic" class="prices-container" style="display: grid; width: 100%;">
+      <div class="class-for-cards">
+        <div class="price-item-max">
+          <div style="height: 200px; background: white; justify-content: center;align-items: center;display: grid; padding: 5px 5px 5px 5px;">
+            <img src="\imp-pc\edu-basica\req-reco\Acer_Aspire_5.jpg" alt="No disponible" style="width: 255px;" onclick="openImagePopup(this.src)">
+          </div>
+          <br>
+          <div class="elements-date-max">
+            <div class="item-name">Acer Aspire 5</div>
+            <div class="item-carac">Caractersticas:</div>
+            <div style="display: grid; font-size: 10px;">
+              <a>- Procesador Intel Core i5</a>
+              <a>- 8 GB de RAM</a>
+              <a>- 256GB SSD</a>
+              <a>- Intel UHD Graphics</a>
+              <a>- Windows 10</a>
+            </div>
+            <div class="price">Precio: <a style="font-weight: 600;">Q7,500.00</a></div>
+          </div>
+        </div>
+        <div class="price-item-max">
+          <div style="height: 200px; background: white; justify-content: center;align-items: center;display: grid; padding: 5px 5px 5px 5px;">
+            <img src="\imp-pc\edu-basica\req-reco\Lenovo_IdeaPad_L340.jpg" alt="No disponible" style="width: 255px;" onclick="openImagePopup(this.src)">
+          </div>
+          <br>
+          <div class="elements-date-max">
+            <div class="item-name">Lenovo IdeaPad L340</div>
+            <div class="item-carac">Caractersticas</div>
+            <div style="display: grid; font-size: 10px;">
+              <a>- Procesador Intel Core i5</a>
+              <a>- 8 GB de RAM</a>
+              <a>- 512GB SSD</a>
+              <a>- Intel UHD Graphics</a>
+              <a>- Windows 10</a>
+            </div>
+            <div class="price">Precio: <a style="font-weight: 600;">Q7,500.00</a></div>
+          </div>
+        </div>
+        <div class="price-item-max">
+          <div style="height: 200px; background: white; justify-content: center;align-items: center;display: grid; padding: 5px 5px 5px 5px;">
+            <img src="\imp-pc\edu-basica\req-reco\HP_Pavilion_15.jpg" alt="No disponible" style="width: 255px;" onclick="openImagePopup(this.src)">
+          </div>
+          <br>
+          <div class="elements-date-max">
+            <div class="item-name">HP Pavilion 15</div>
+            <div class="item-carac">Caractersticas</div>
+            <div style="display: grid; font-size: 10px;">
+              <a>- Procesador AMD Ryzen 5</a>
+              <a>- 8 GB de RAM</a>
+              <a>- 256GB SSD</a>
+              <a>- AMD Radeon Vega Graphics</a>
+              <a>- Windows 10</a>
+            </div>
+            <div class="price">Precio: <a style="font-weight: 600;">Q7,500.00</a></div>
+          </div>
+        </div>
+        <div class="price-item-max">
+          <div style="height: 200px; background: white; justify-content: center;align-items: center;display: grid; padding: 5px 5px 5px 5px;">
+            <img src="\imp-pc\edu-basica\req-reco\Dell_Inspiron_15.jpg" alt="No disponible" style="width: 255px;" onclick="openImagePopup(this.src)">
+          </div>
+          <br>
+          <div class="elements-date-max">
+            <div class="item-name">Dell Inspiron 15</div>
+            <div class="item-carac">Caractersticas</div>
+            <div style="display: grid; font-size: 10px;">
+              <a>- Procesador Intel Core i5</a>
+              <a>- 8 GB de RAM</a>
+              <a>- 256GB SSD</a>
+              <a>- Intel UHD Graphics</a>
+              <a>- Windows 10</a>
+            </div>
+            <div class="price">Precio: <a style="font-weight: 600;">Q8,500.00</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="class-for-cards">
+        <div class="price-item-max">
+          <div style="height: 200px; background: white; justify-content: center;align-items: center;display: grid; padding: 5px 5px 5px 5px;">
+            <img src="\imp-pc\edu-basica\req-reco\ASUS_VivoBook_15.jpg" alt="No disponible" style="width: 255px;" onclick="openImagePopup(this.src)">
+          </div>
+          <br>
+          <div class="elements-date-max">
+            <div class="item-name">ASUS VivoBook 15</div>
+            <div class="item-carac">Caractersticas</div>
+            <div style="display: grid; font-size: 10px;">
+              <a>- Procesador AMD Ryzen 5</a>
+              <a>- 8 GB de RAM</a>
+              <a>- 256GB SSD</a>
+              <a>- AMD Radeon Vega Graphics</a>
+              <a>- Windows 10</a>
+            </div>
+            <div class="price">Precio: <a style="font-weight: 600;">Q6,500.00</a></div>
+          </div>
+        </div>
+        <div class="price-item-max">
+          <div style="height: 200px; background: white; justify-content: center;align-items: center;display: grid; padding: 5px 5px 5px 5px;">
+            <img src="\imp-pc\edu-basica\req-reco\Lenovo_ThinkPad_E15.jpg" alt="No disponible" style="width: 205px;" onclick="openImagePopup(this.src)">
+          </div>
+          <br>
+          <div class="elements-date-max">
+            <div class="item-name">Lenovo ThinkPad E15</div>
+            <div class="item-carac">Caractersticas</div>
+            <div style="display: grid; font-size: 10px;">
+              <a>- Procesador Intel Core i5</a>
+              <a>- 8 GB de RAM</a>
+              <a>- 512GB SSD</a>
+              <a>- Intel UHD Graphics</a>
+              <a>- Windows 10</a>
+            </div>
+            <div class="price">Precio: <a style="font-weight: 600;">Q8,500.00</a></div>
+          </div>
+        </div>
+        <div class="price-item-max">
+          <div style="height: 200px; background: white; justify-content: center;align-items: center;display: grid; padding: 5px 5px 5px 5px;">
+            <img src="\imp-pc\edu-basica\req-reco\Acer_Swift_3.jpg" alt="No disponible" style="width: 245px;" onclick="openImagePopup(this.src)">
+          </div>
+          <br>
+          <div class="elements-date-max">
+            <div class="item-name">Acer Swift 3</div>
+            <div class="item-carac">Caractersticas</div>
+            <div style="display: grid; font-size: 10px;">
+              <a>- Procesador AMD Ryzen 5</a>
+              <a>- 8 GB de RAM</a>
+              <a>- 256GB SSD</a>
+              <a>- AMD Radeon Vega Graphics</a>
+              <a>- Windows 10</a>
+            </div>
+            <div class="price">Precio: <a style="font-weight: 600;">Q7,500.00</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="no-records" style="display: grid; align-items: center; justify-content: center; width: 100%; padding: 50px; display: none;">
+    <div style="display: grid; align-items: center; justify-content: center;"><label class="tool-tip-label" tool-tip-content="image_not_supported"><i class="material-icons" style="font-size: 350px;">image_not_supported</i></label></div>
+    <div style="display: grid; align-items: center; justify-content: center; font-size: 15px; font-weight: 600;">
+      LO SENTIMOS, DESAFORTUNADAMENTE NO HEMOS ENCONTRADO COINCIDENCIAS CON TU PRESUPUESTO 
+    </div>
+  </div>
+  
+<script>
+// Obtener referencias a los elementos del botón y los div
+const minReqButton = document.getElementById('min-req');
+const maxReqButton = document.getElementById('max-req');
+const minReqBasicDiv = document.getElementById('all_min');
+const maxReqBasicDiv = document.getElementById('all_basic');
+const inputminprice = document.getElementById('filter-min');
+const inputmaxprice = document.getElementById('filter-max');
+const inputminprice2 = document.getElementById('filter-min-max');
+const inputmaxprice2 = document.getElementById('filter-max-max');
+
+// Agregar evento de clic al botón mínimo
+minReqButton.addEventListener('click', function() {
+  minReqBasicDiv.style.display = 'block';
+  maxReqBasicDiv.style.display = 'none';
+  inputminprice.value = "";
+  inputmaxprice.value = "";
+  inputminprice2.value = "";
+  inputmaxprice2.value = "";
+  var priceItems = document.getElementsByClassName('price-item');
+    
+  // Mostrar todos los elementos
+  for (var i = 0; i < priceItems.length; i++) {
+    priceItems[i].style.display = 'block';
+  }
+  
+  // Ocultar el div 'no-records'
+  var noRecordsDiv = document.getElementById('no-records');
+  noRecordsDiv.style.display = 'none';
+});
+
+// Agregar evento de clic al botón máximo
+maxReqButton.addEventListener('click', function() {
+  minReqBasicDiv.style.display = 'none';
+  maxReqBasicDiv.style.display = 'block';
+  inputminprice.value = "";
+  inputmaxprice.value = "";
+  inputminprice2.value = "";
+  inputmaxprice2.value = "";
+  var priceItems = document.getElementsByClassName('price-item-max');
+    
+  // Mostrar todos los elementos
+  for (var i = 0; i < priceItems.length; i++) {
+    priceItems[i].style.display = 'block';
+  }
+  
+  // Ocultar el div 'no-records'
+  var noRecordsDiv = document.getElementById('no-records');
+  noRecordsDiv.style.display = 'none';
+});
+</script>
+
+<script>
+
+  const inputminprice_1 = document.getElementById('filter-min');
+  const inputmaxprice_1 = document.getElementById('filter-max');
+
+  // Función para filtrar los precios
+  function filterPrices() {
+    // Obtener los valores mínimo y máximo ingresados por el usuario
+    var minPrice = parseInt(document.getElementById('filter-min').value);
+    var maxPrice = parseInt(document.getElementById('filter-max').value);
+    
+    // Obtener todos los elementos de precio
+    var priceItems = document.getElementsByClassName('price-item');
+    
+    // Variable para contar los elementos filtrados
+    var filteredCount = 0;
+    
+    // Recorrer todos los elementos y ocultar aquellos cuyo precio no esté dentro del rango especificado
+    for (var i = 0; i < priceItems.length; i++) {
+      var priceElement = priceItems[i].getElementsByClassName('price')[0];
+      var price = parseInt(priceElement.getElementsByTagName('a')[0].innerText.replace('Q', '').replace(',', ''));
+      
+      if (price >= minPrice && price <= maxPrice) {
+        priceItems[i].style.display = 'block';
+        filteredCount++;
+      } else {
+        priceItems[i].style.display = 'none';
+      }
+    }
+    
+    // Mostrar el div 'no-records' si no se encontraron elementos filtrados
+    var noRecordsDiv = document.getElementById('no-records');
+    if (filteredCount === 0) {
+      noRecordsDiv.style.display = 'block';
+    } else {
+      noRecordsDiv.style.display = 'none';
+    }
+  }
+  
+  // Función para mostrar todos los elementos
+  function showAll() {
+    // Obtener todos los elementos de precio
+    var priceItems = document.getElementsByClassName('price-item');
+    
+    // Mostrar todos los elementos
+    for (var i = 0; i < priceItems.length; i++) {
+      priceItems[i].style.display = 'block';
+    }
+    
+    // Ocultar el div 'no-records'
+    var noRecordsDiv = document.getElementById('no-records');
+    noRecordsDiv.style.display = 'none';
+
+    //limpiar el texto de los inputs de busqueda
+    inputminprice.value = "";
+    inputmaxprice.value = "";
+  }
+  
+  // Asignar los eventos a los botones
+  document.getElementById('filter-button').addEventListener('click', filterPrices);
+  document.getElementById('show-all-button').addEventListener('click', showAll);
+</script>
+
+<script>
+  // Función para filtrar los precios
+  function filterPrices() {
+    // Obtener los valores mínimo y máximo ingresados por el usuario
+    var minPrice = parseInt(document.getElementById('filter-min-max').value);
+    var maxPrice = parseInt(document.getElementById('filter-max-max').value);
+    
+    // Obtener todos los elementos de precio
+    var priceItems = document.getElementsByClassName('price-item-max');
+    
+    // Variable para contar los elementos filtrados
+    var filteredCount = 0;
+    
+    // Recorrer todos los elementos y ocultar aquellos cuyo precio no esté dentro del rango especificado
+    for (var i = 0; i < priceItems.length; i++) {
+      var priceElement = priceItems[i].getElementsByClassName('price')[0];
+      var price = parseInt(priceElement.getElementsByTagName('a')[0].innerText.replace('Q', '').replace(',', ''));
+      
+      if (price >= minPrice && price <= maxPrice) {
+        priceItems[i].style.display = 'block';
+        filteredCount++;
+      } else {
+        priceItems[i].style.display = 'none';
+      }
+    }
+    
+    // Mostrar el div 'no-records' si no se encontraron elementos filtrados
+    var noRecordsDiv = document.getElementById('no-records');
+    if (filteredCount === 0) {
+      noRecordsDiv.style.display = 'block';
+    } else {
+      noRecordsDiv.style.display = 'none';
+    }
+  }
+  
+  // Función para mostrar todos los elementos
+  function showAll() {
+    // Obtener todos los elementos de precio
+    var priceItems = document.getElementsByClassName('price-item-max');
+    
+    // Mostrar todos los elementos
+    for (var i = 0; i < priceItems.length; i++) {
+      priceItems[i].style.display = 'block';
+    }
+    
+    // Ocultar el div 'no-records'
+    var noRecordsDiv = document.getElementById('no-records');
+    noRecordsDiv.style.display = 'none';
+  }
+  
+  // Asignar los eventos a los botones
+  document.getElementById('filter-button-max').addEventListener('click', filterPrices);
+  document.getElementById('show-all-button-max').addEventListener('click', showAll);
+</script>
+
+<script>
+  // Función para abrir la imagen en una ventana emergente
+  function openImagePopup(imageUrl) {
+    // Crear la ventana emergente de la imagen
+    var imagePopup = document.createElement('div');
+    imagePopup.className = 'image-popup';
+    
+    // Crear la imagen
+    var image = document.createElement('img');
+    image.src = imageUrl;
+    image.alt = 'Imagen';
+    
+    // Crear el botón de cerrar
+    var closeButton = document.createElement('span');
+    closeButton.innerHTML = '&times;';
+    closeButton.className = 'close-btn';
+    
+    // Asignar el evento de clic al botón de cerrar
+    closeButton.onclick = function() {
+      // Remover la ventana emergente de la imagen al hacer clic en el botón de cerrar
+      document.body.removeChild(imagePopup);
+    };
+    
+    // Agregar la imagen y el botón de cerrar a la ventana emergente
+    imagePopup.appendChild(image);
+    imagePopup.appendChild(closeButton);
+    
+    // Agregar la ventana emergente al body del documento
+    document.body.appendChild(imagePopup);
+  }
+</script>
+
+</body>
+</html>
